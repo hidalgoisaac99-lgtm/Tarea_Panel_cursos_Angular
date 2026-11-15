@@ -1,0 +1,22 @@
+<section class="contenedor-cursos">
+
+  <h2>Mis cursos</h2>
+  <p class="introduccion">
+    Consulta las materias disponibles en tu panel académico.
+  </p>
+
+  <div class="lista">
+
+    <div class="tarjeta" *ngFor="let curso of cursos">
+
+      <h3>{{ curso.nombre }}</h3>
+
+      <p>{{ curso.descripcion }}</p>
+
+      <span>Duración: {{ curso.duracion }}</span>
+
+    </div>
+
+  </div>
+
+</section>
